@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Dodge the Box: 100 Stages</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Dodge the Box</div>
+    <div class="meta">
+      <div class="pill">Stage: <span id="stage">1</span>/100</div>
+      <div class="pill">Score: <span id="score">0</span></div>
+      <div class="pill">Goal: <span id="goal">0</span></div>
+      <div class="pill">Lives: <span id="lives">1</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="game-card">
+      <canvas id="game" width="480" height="720" aria-label="Dodge the Box game canvas"></canvas>
+
+      <div class="hud">
+        <button id="btnPause" class="btn ghost" type="button" aria-label="Pause">⏸</button>
+        <button id="btnSound" class="btn ghost" type="button" aria-label="Sound">🔊</button>
+      </div>
+
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <h1 id="overlayTitle">Dodge the Box</h1>
+          <p id="overlayText">Survive 100 stages. Different enemy types appear as you progress.</p>
+          <div class="panel-actions">
+            <button id="btnPrimary" class="btn primary" type="button">Start</button>
+            <button id="btnSecondary" class="btn" type="button">How to Play</button>
+          </div>
+          <p class="tiny" id="overlayHint">Keyboard: ← → or A D. Mobile: Hold ◀ ▶ below.</p>
+          <p class="tiny legend">
+            🔴 Normal&nbsp;&nbsp;🟠 Burst&nbsp;&nbsp;🟣 Zigzag&nbsp;&nbsp;⚠️ Warning = heavy drop
+          </p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="leftBtn" class="ctrl" type="button" aria-label="Move left">◀</button>
+        <button id="rightBtn" class="ctrl" type="button" aria-label="Move right">▶</button>
+      </div>
+    </div>
+
+    <section class="tips">
+      <h2>Enemy Types</h2>
+      <ul>
+        <li><b>🔴 Normal</b>: straight down.</li>
+        <li><b>🟠 Burst</b>: occasionally jumps forward (sudden speed).</li>
+        <li><b>🟣 Zigzag</b>: moves left and right while falling.</li>
+        <li><b>⚠️ Heavy</b>: spawns after a warning marker, falls faster and larger.</li>
+      </ul>
+      <p class="note">Tip: later you can show ads on “Stage Clear” every 3–5 stages.</p>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
