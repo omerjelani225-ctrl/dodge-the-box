@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-adsense-account" content="ca-pub-9744624386248405">
-  <title>شروط الاستخدام</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-adsense-account" content="ca-pub-9744624386248405" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9744624386248405" crossorigin="anonymous"></script>
+  <title>Terms of Service | Dodge the Box</title>
   <style>
-    body{font-family:Arial, sans-serif;background:#0b1020;color:#e7eaf0;margin:0;padding:24px}
-    .card{max-width:900px;margin:auto;background:#0f172a;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
-    a{color:#7dd3fc}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;margin:0;background:#0b1220;color:#e7e9ee}
+    header{padding:22px 16px;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(11,18,32,.9);position:sticky;top:0}
+    header a{color:#9aa4b2;text-decoration:none}
+    main{max-width:860px;margin:0 auto;padding:22px 16px}
+    h1{margin:6px 0 0;font-size:26px}
+    h2{margin-top:22px;font-size:18px}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px}
+    ul{margin:8px 0 0 18px}
+    .muted{color:#9aa4b2;font-size:13px}
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>شروط الاستخدام</h1>
-    <p>اللعبة مقدمة "كما هي" للاستخدام الترفيهي فقط. باستخدامك للموقع فأنت توافق على هذه الشروط.</p>
-    <p>للرجوع للعبة: <a href="./index.html">اضغط هنا</a></p>
-  </div>
+  <header>
+    <a href="./index.html">← Back to game</a>
+    <h1>Terms of Service</h1>
+    <div class="muted">Last updated: <span id="d"></span></div>
+  </header>
+
+  <main>
+    <div class="card">
+      <p>By using this website and game (“Dodge the Box”), you agree to these Terms. If you do not agree, please do not use the site.</p>
+
+      <h2>1) Use of the game</h2>
+      <ul>
+        <li>You may play and share the game link for personal entertainment.</li>
+        <li>Do not attempt to break, exploit, or abuse the site (spam, automated attacks, scraping, etc.).</li>
+      </ul>
+
+      <h2>2) Ads and third‑party services</h2>
+      <p>The site may display ads served by Google and may use related services to deliver, measure, and improve ads. These services may use cookies or similar technologies in accordance with their policies.</p>
+
+      <h2>3) No warranties</h2>
+      <p>The site is provided “as is” without warranties of any kind. We do not guarantee that it will be uninterrupted or error‑free.</p>
+
+      <h2>4) Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, we are not liable for any damages arising from your use of the site.</p>
+
+      <h2>5) Changes</h2>
+      <p>We may update these Terms from time to time. Continued use of the site means you accept the updated Terms.</p>
+
+      <h2>6) Contact</h2>
+      <p>If you have questions, contact: <a href="mailto:omerjelani225@gmail.com">omerjelani225@gmail.com</a></p>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('d').textContent = new Date().toISOString().slice(0,10);
+  </script>
 </body>
 </html>
